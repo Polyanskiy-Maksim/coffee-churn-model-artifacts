@@ -1,13 +1,13 @@
-# Coffee churn model artifacts
+# Артефакты модели оттока клиентов кофейного сервиса
 
-This repository contains the trained LogisticRegression pipeline and its run configuration for the Yandex Practicum coffee delivery churn project. The pipeline includes feature generation, imputation, scaling, categorical encoding, feature selection, and classification.
+В этом репозитории сохранены обученный пайплайн логистической регрессии и его конфигурация для проекта Яндекс Практикума по прогнозированию оттока клиентов сервиса доставки кофе. Пайплайн включает генерацию признаков, заполнение пропусков, масштабирование, кодирование категориальных данных, отбор признаков и классификацию.
 
-## Files
+## Файлы
 
-- `coffee_churn_pipeline.joblib` — fitted end-to-end pipeline.
-- `coffee_churn_config.joblib` — selected features, hyperparameters, and evaluation metrics.
-- `requirements.txt` — package versions used when the artifacts were created.
+- `coffee_churn_pipeline.joblib` — обученный пайплайн модели.
+- `coffee_churn_config.joblib` — использованные признаки, гиперпараметры и метрики качества.
+- `requirements.txt` — версии библиотек, использованные при создании артефактов.
 
-The public source dataset is available from Yandex Practicum: https://code.s3.yandex.net/datasets/coffee_churn_dataset.csv. The dataset itself is not included here.
+Исходный датасет доступен на Яндекс Практикуме: https://code.s3.yandex.net/datasets/coffee_churn_dataset.csv. Сам датасет в репозиторий не добавлен.
 
-The artifact was created with scikit-learn 1.7.2. For loading a joblib model, use the compatible package versions listed in `requirements.txt`.
+Артефакты созданы с использованием scikit-learn 1.7.2. Для загрузки модели через joblib используйте совместимые версии библиотек из `requirements.txt`.
